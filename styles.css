@@ -1,0 +1,137 @@
+/* body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  #practiceBox, #progressBox {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #practiceBox {
+    flex: 3;
+    background-color: #ffffff;
+    min-width: 300px;
+  }
+  
+  #progressBox {
+    flex: 2;
+    background-color: #f9f9f9;
+    min-width: 300px;
+  }
+  
+  #brailleOutput {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  #progressBox canvas {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  
+  
+  @media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    #practiceBox, #progressBox {
+        width: 100%;
+        max-width: 600px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #brailleOutput {
+        font-size: 24px;
+    }
+  } */
+
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#practiceBox, #progressBox, #heatmapBox {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#practiceBox {
+    flex: 3;
+    background-color: #ffffff;
+    min-width: 300px;
+}
+
+#progressBox, #heatmapBox {
+    flex: 2;
+    background-color: #f9f9f9;
+    min-width: 300px;
+}
+
+#brailleOutput {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+#progressBox canvas, #heatmapBox canvas {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #practiceBox, #progressBox, #heatmapBox {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    #brailleOutput {
+        font-size: 24px;
+    }
+}

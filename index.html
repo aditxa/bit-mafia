@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braille Learning Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Braille Learning Tool</h1>
+    <button id="connectBtn">Connect to Arduino</button>
+
+    <div class="container">
+        <div id="practiceBox">
+            <h2>Braille Learning Tool</h2>
+            <label for="modeSelect">Select Mode:</label>
+            <select id="modeSelect">
+                <option value="learning">Learning Mode</option>
+                <option value="practice">Practice Mode</option>
+            </select>
+            <div id="brailleOutput">Braille character will appear here</div>
+        </div>
+        <div id="progressBox">
+            <h2>Progress Rate</h2>
+            <canvas id="progressChart"></canvas>
+        </div>
+        <div id="heatmapBox">
+            <h2>Error Heatmap</h2>
+            <canvas id="heatmapChart"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
